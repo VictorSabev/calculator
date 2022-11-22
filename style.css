@@ -1,18 +1,15 @@
 .container .keyboard {
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  
   list-style: none;
   border: 1px solid rgb(110, 110, 110);
   
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(7, 1fr);
-
   gap: 2px;
-  padding: 50px;
-  margin: 100px;
-  
+  padding: 0%;
+  margin: 0%;
 } 
-
-
 
 .container .operationBar {
   grid-column: 1 / 5;
@@ -24,15 +21,21 @@
   grid-row: 2 / 3; 
 }
 
+h1 {
+  font-size: 200%;
+}
+
 .operationBar, .resultBar {
   background-color: rgb(161, 208, 253);
-  font-size: 120%;
-  padding: 0%;
+  padding: 2%;
   text-align: right;
 }
 
 button {
-  font-size: 100%;
+  font-size: 300%;
+  color: black;
+  border-color: rgba(156, 156, 156, 0.301) ;
+  box-shadow: none;
 }
 
 button:hover {
